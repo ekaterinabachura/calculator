@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/src/style.css"> -->
+    <title>Calculator</title>
+    <style>
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: flex-end;
+            width: 303px;
+            height: 400px;
+            background-color: #535353;
+            color: #fff;
+            font-family: sans-serif;
+            border-radius: 20px;
+        }
+
+        #result {
+            font-size: 50px;
+            padding-right: 10px;
+        }
+
+        button {
+            font-size: 24px;
+            border: none;
+            color: #fff;
+        }
+
+        .buttons {
+            display: grid;
+            gap: 1px;
+            grid-template-columns: repeat(4, 75px);
+            grid-template-rows: repeat(5, 60px);
+        }
+
+        .span-2 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            border-bottom-left-radius: 20px;
+        }
+
+        .calculate {
+            border-bottom-right-radius: 20px;
+        }
+
+        .dark {
+            background-color: #646464;
+        }
+
+        .light {
+            background-color: #7d7d7d;
+        }
+
+        .orange {
+            background-color: #ff9f0a;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="result">0</div>
+        <div class="buttons">
+            <button class="operator dark" data-action="clear">AC</button>
+            <button class="operator dark" data-action="sign">+/-</button>
+            <button class="operator dark" data-action="percent">%</button>
+            <button class="operator orange" data-action="divide">÷</button>
+
+            <button class="light" data-number="7">7</button>
+            <button class="light" data-number="8">8</button>
+            <button class="light" data-number="9">9</button>
+            <button class="orange" data-action="multiply">×</button>
+
+            <button class="light" data-number="4">4</button>
+            <button class="light" data-number="5">5</button>
+            <button class="light" data-number="6">6</button>
+            <button class="orange" data-action="subtract">-</button>
+
+            <button class="light" data-number="1">1</button>
+            <button class="light" data-number="2">2</button>
+            <button class="light" data-number="3">3</button>
+            <button class="orange" data-action="add">+</button>
+
+            <button class="span-2 light" data-number="0">0</button>
+            <button class="light" data-number=".">,</button>
+            <button class="calculate orange" data-action="calculate">=</button>
+        </div>
+    </div>
+</body>
+</html>
