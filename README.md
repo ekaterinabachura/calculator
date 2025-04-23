@@ -6,7 +6,7 @@
 ---
 
 ## How to run the app  
-### 1. Установите зависимости:  
+### Установка зависимостей:  
 ```bash 
 npm install
 npm run build
