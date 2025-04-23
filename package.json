@@ -6,7 +6,7 @@
     "build": "webpack",
     "lint": "eslint src/**/*.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -r https://github.com/ekaterinabachura/calculator.git"
   },
   "husky": {
     "hooks": {
