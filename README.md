@@ -14,6 +14,7 @@ npm run deploy
 ```
 
 ## Structure of the project
+```plaintext
 calculator:
   dist:                 # Собранные файлы для продакшена
     index.html          # Оптимизированный HTML
@@ -24,3 +25,4 @@ calculator:
   .eslintrc.json        # Конфигурация ESLint и Prettier
   webpack.config.js     # Настройки Webpack
   package.json          # Зависимости и скрипты
+```
